@@ -1,0 +1,369 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>APPLE</title>
+    <link rel="icon" href="APPLE LOGO.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    
+
+    <style>
+      body{
+        background: url("bg.png") repeat center;
+        font-family: 'Roboto Slab', serif;
+      }
+     
+        .collapse{
+            
+            margin-left: 17%;
+        }
+        .collapse ul li{
+            margin-left: 10px;
+        }
+        #navbarSupportedContent ul li a:hover{
+         padding-bottom: 2px;
+          border-bottom: 2px solid gainsboro;
+          border-top: 1px solid gainsboro;
+          border-radius: 10%;
+          color:#687fb1;
+        }
+        .navbar .container-fluid form button:hover{
+          background-color: rgb(129, 117, 117);
+          color: rgb(158, 145, 128);
+        }
+
+.row{
+          
+    width: 100%;
+  }
+  .card-title{
+    text-align: center;
+  }
+  
+  .card{
+    width: 80%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    margin: 0 auto;
+    
+  }
+  
+  .row{
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  
+  .marg-left
+    {
+    margin-left: 20px;
+
+    
+  }
+  .marg-right
+    {
+    margin-right: -20px;
+
+    
+  }
+  h5 a{
+    text-decoration: none;
+    color: rgb(65, 63, 63);
+  }
+  .des1,.des2,.des3,.des4,.des5{
+    display: none;
+  }
+  @media (max-width: 900px) {
+    .card{
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="Home.html"><img src="APPLE LOGO.png" alt="Apple Logo" width="60px" style="border-radius: 40%; filter:contrast(100%)"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item px-4">
+          <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown px-4">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Iphone.html">Iphones</a></li>
+            
+
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Mac.html">MacBook</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Accessories.html">Accessories</a></li>
+          
+          </ul>
+
+
+        </li>
+        <li class="nav-item px-4">
+          <a class="nav-link active" href="About.html">About</a>
+        </li>
+        
+        <li class="nav-item px-4">
+          <a class="nav-link active" href="Contact us.html" >Contact Us</a>
+        </li>
+      </ul>
+      
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      
+    </div>
+  </div>
+</nav>
+<h2 class="text-center " style="background-color: rgb(27, 36, 36); margin: 100px 80px 20px 80px; border-radius: 20%; font-size: 36px; font-weight: bold;  color: gray; border-bottom: 5px solid rgb(211, 185, 151); border-top: 2px solid rgb(211, 185, 151);">OUR PRODUCTS</h2>
+      <div class="row align-items-start row-cols-1 row-cols-md-3 g-4 ">
+        <div class="col marg-left ml-4 " >
+          
+          <div class="card h-100">
+            <a href="Iphone.html" target="_blank"><img src="15 Pro Max.jpg" class="card-img-top" alt="..." height="220vh" width="100%"></a>
+            <div class="card-body" style="background: linear-gradient(45deg, rgb(216, 167, 167), silver); border-bottom-left-radius: 5%; border-bottom-right-radius: 5%;">
+              <h5 class="card-title" style="text-shadow: -2.5px -2.5px 0px bisque; padding-bottom: 5px; border-bottom: 3px dotted grey; border-bottom-left-radius: 30%; border-bottom-right-radius: 30%;"><a href="Iphone.html" target="_blank">Iphone 15 Pro Max</a></h5>
+              <p class="card-text">The iPhone 15 Pro Max is the most advanced iPhone yet, with a stunning design, a powerful A17 Bionic chip, and a pro-camera system that takes stunning photos and videos in any light.</p>
+              <script>
+                $(document).ready(function () {
+              $(".view").click(function () {
+              $(".des1").toggle(2000); // Toggle visibility of the description element
+             });
+              });
+                </script>
+              
+              <div class="des1">
+
+              
+                <ul>
+                  <li>Stunning design in a durable titanium finish</li>
+                  <li>Powerful A17 Bionic chip</li>
+                  <li>Pro camera system with 48MP Main camera for stunning photos and videos in any light</li>
+                  <li>6.7-inch Super Retina XDR display with ProMotion technology and Adaptive refresh rates up to 120Hz</li>
+                  <li>Always-On display</li>
+                  <li>All-day battery life</li>
+                  <li>iOS 17</li>
+                  <li>Wireless charging</li>
+                </ul>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm center view">View More</button>
+              
+ 
+              
+            </div>
+          </div>
+        
+        </div>
+        <div class="col marg-right">
+          <div class="card h-100">
+            <a href="Mac.html" target="_blank"><img src="Mac Pro 15 2023.jpg" class="card-img-top" alt="..." height="220vh" width="100%" ></a>
+            <div class="card-body" style="background: linear-gradient(45deg, rgb(216, 167, 167), silver); border-bottom-left-radius: 5%; border-bottom-right-radius: 5%;">
+              <h5 class="card-title " style="text-shadow: -2.5px -2.5px 0px bisque; padding-bottom: 5px; border-bottom: 3px dotted grey; border-bottom-left-radius: 30%; border-bottom-right-radius: 30%;"><a href="Mac.html" target="_blank">MacBook Air 15-inch(2023)</a></h5>
+              <p class="card-text">The MacBook Air 15 is the most powerful and versatile MacBook Air yet, with a stunning display, powerful performance, and long battery life. It's perfect for students, professionals.</p>
+              <script>
+                $(document).ready(function () {
+              $(".view2").click(function () {
+              $(".des2").toggle(2000); // Toggle visibility of the description element
+             });
+              });
+                </script>
+              <div class="des2">
+                <ul>
+                  <li>Stunning 15.3-inch Liquid Retina display</li>
+                  <li>Powerful M2 chip with up to 8-core CPU and 10-core GPU</li>
+                  <li>Up to 24GB of unified memory</li>
+                  <li>Up to 2TB of SSD storage</li>
+                  <li>Two Thunderbolt 4 ports</li>
+                  <li>Touch ID</li>
+                  <li>Magic Keyboard</li>
+                  <li>Long battery life</li>
+                </ul>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm view2">View More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="Accessories.html" target="_blank"><img src="AirPods Pro.jpg" class="card-img-top" alt="..." height="220vh" width="100%" ></a>
+            <div class="card-body" style="background: linear-gradient(45deg, rgb(216, 167, 167), silver); border-bottom-left-radius: 5%; border-bottom-right-radius: 5%;">
+              <h5 class="card-title" style="text-shadow: -2.5px -2.5px 0px bisque; padding-bottom: 5px; border-bottom: 3px dotted grey; border-bottom-left-radius: 30%; border-bottom-right-radius: 30%;"><a href="Accessories.html" target="_blank">Airpods Pro(3rd Generation)</a></h5>
+              <p class="card-text">The AirPods Pro (3rd Generation) are the most advanced AirPods yet, with Active Noise Cancellation, Adaptive EQ, Spatial Audio, and Transparency mode. They also feature sweat and water resistance.</p>
+              <script>
+                $(document).ready(function () {
+              $(".view3").click(function () {
+              $(".des3").toggle(2000); // Toggle visibility of the description element
+             });
+              });
+                </script>
+              <div class="des3">
+                <ul>
+                  <li>Active Noise Cancellation</li>
+                  <li>Adaptive EQ</li>
+                  <li>Transparency mode</li>
+                  <li>Up to 6 hours of listening time on a single charge</li>
+                  <li>Up to 30 hours of listening time with the charging case</li>
+                  <li>Spatial Audio</li>
+                  <li>Sweat and water resistance</li>
+                </ul>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm view3">View More</button>
+              
+            </div>
+          </div>
+        </div>
+      
+
+
+        <div class="col mx-auto">
+          <div class="card h-100 mt-4">
+            <a href="Accessories.html" target="_blank"><img src="Wireless Charger.png" class="card-img-top" alt="..." height="220vh" width="100%" style="background-color: rgb(235, 233, 233);" ></a>
+            <div class="card-body" style="background: linear-gradient(45deg, rgb(216, 167, 167), silver); border-bottom-left-radius: 5%; border-bottom-right-radius: 5%;">
+              <h5 class="card-title" style="text-shadow: -2.5px -2.5px 0px bisque; padding-bottom: 5px; border-bottom: 3px dotted grey; border-bottom-left-radius: 30%; border-bottom-right-radius: 30%;"><a href="Accessories.html" target="_blank" rel="noopener noreferrer">3-in-1 Wireless Charger</a></h5>
+              <p class="card-text">The Apple 3-in-1 Wireless Charger is a convenient and powerful way to charge all of your Apple devices. It can charge your iPhone, Apple Watch, and AirPods all at once, and it supports MagSafe wireless charging for iPhone 12 or later.</p>
+              <script>
+                $(document).ready(function () {
+              $(".view5").click(function () {
+            
+              $(".des5").toggle(2000);
+             
+
+             });
+              });
+                </script>
+              <div class="des5">
+                <ul>
+                  <li>Charge your iPhone, Apple Watch, and AirPods all at once</li>
+                  <li>MagSafe wireless charging for iPhone 12 and later</li>
+                  <li>Fast wireless charging for Apple Watch Series 7 and later</li>
+                  <li>Qi wireless charging for AirPods</li>
+                  </ul>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm view5">View More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col mx-auto">
+          <div class="card h-100 mt-4">
+            <a href="Accessories.html" target="_blank"><img src="Apple Air Tag.png" class="card-img-top" alt="..." height="220vh" width="100%" style="background-color: rgb(240, 237, 237);" ></a>
+            <div class="card-body" style="background: linear-gradient(45deg, rgb(216, 167, 167), silver); border-bottom-left-radius: 5%; border-bottom-right-radius: 5%;">
+              <h5 class="card-title" style="text-shadow: -2.5px -2.5px 0px bisque; padding-bottom: 5px; border-bottom: 3px dotted grey; border-bottom-left-radius: 30%; border-bottom-right-radius: 30%;"><a href="Accessories.html" target="_blank" rel="noopener noreferrer">Apple Air Tag</a></h5>
+              <p class="card-text">Apple AirTags are small, lightweight tracking devices that you can attach to your belongings to help you keep track of them. They use Bluetooth to connect to nearby Apple devices, and you can track them in the Find My app.</p>
+              <script>
+                $(document).ready(function () {
+              $(".view4").click(function () {
+              $(".des4").toggle(2000); // Toggle visibility of the description element
+             });
+              });
+                </script>
+              <div class="des4">
+                <ul>
+                  <li>Small, lightweight tracking devices</li>
+                  <li>Can be attached to keys, bags, wallets, and other items</li>
+                  <li>Use Bluetooth to connect to nearby Apple devices</li>
+                  <li>Allow you to track your items in the Find My app</li>
+                  <li>Long battery life</li>
+                  <li>a great way to keep track of your belongings and give you peace of mind</li>
+                </ul>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm view4">View More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    
+
+
+  <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
+   
+    <div class="container p-4 pb-0">
+      
+      <section class="">
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              APPLE
+            </h6>
+            <p>
+              Apple is a leading technology company that designs, develops and sells electronics. It is known for its innovative products, such as the iPhone, iPad, Mac, and Apple Watch.
+            </p>
+          </div>
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-2  mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold"  style="text-decoration: wavy underline;">Products</h6>
+            <p>
+              <a href="Mac.html" class="text-white">MacBooks</a>
+            </p>
+            <p>
+              <a href="Iphone.html" class="text-white">Iphone</a>
+            </p>
+            <p>
+              <a href="Accessories.html" class="text-white">Accessories</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+          
+
+          <!-- Grid column -->
+          <div class="col-md-4  mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold" style="text-decoration: wavy underline;">Address</h6>
+            <p>1 Infinite Loop, Cupertino, California.</p>
+            <p> For more Information </p>
+            <p>Call us at +1 (408) 996–1010</p>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold" style="text-decoration: wavy underline;">Follow us</h6>
+            <!-- Facebook -->
+            <a  href="https://www.facebook.com/apple/" target="_blank"><img src="fb.png" alt="fblogo" width="30" height="25"></a>
+            <!-- Twitter -->
+            <a  href="https://twitter.com/apple?lang=en" target="_blank"><img src="Twiiter.png" alt="twitter logo" width="40" height="40"></a>
+
+            <!-- Google -->
+            <a  href="https://www.apple.com/" target="_blank"><img src="Google.png" alt="google logo" width="30" height="30"></a>
+              <!-- Instagram -->
+              <a  href="https://www.instagram.com/apple/?hl=en" target="_blank"><img src="Insta.png" alt="Insta logo" width="30" height="30"></a>
+            <!-- Linkedin -->
+            <a  href="https://www.linkedin.com/company/apple " target="_blank"><img src="Linked In.png" alt="Linked in logo" width="40" height="40"></a>
+          </div>
+        </div>
+      </section>
+     
+    </div>
+    
+    <div class="text-center p-3" style="background-color: rgb(43, 42, 42)">
+      Copyright © 2023 Apple Inc. All rights reserved.
+    </div>
+  </footer>
+ 
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
